@@ -28,6 +28,6 @@ module.exports = {
     autoprefixer: {},
     //tailwindcss("./tailwind.js"),
     //...(process.env.NODE_ENV === "production" ? purgecss : {}),
-    ...(process.env.NODE_ENV === "production" ? {} : {}),
+    ...(process.env.NODE_ENV === "production" ? purgecss : {}),
   },
 };
