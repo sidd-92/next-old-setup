@@ -3,10 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "npm run watch:css && next dev -p 3003",
+    "build": "npm run build:css && next build",
     "start": "next start",
-    "watch:css": "postcss src/assets/tailwind.css -o src/assets/main.css"
+    "watch:css": "postcss src/assets/tailwind.css -o src/assets/main.css",
+    "build:css": "postcss src/assets/tailwind.css -o src/assets/main.css"
   },
   "dependencies": {
     "axios": "^0.21.1",
